@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import * as Yup from 'yup'
 import { toast } from 'react-toastify'
 import FormDefault from '../components/FormDefault'
+import Test from './Test';
+import { NavLink } from 'react-router-dom';
 
 const Register = () => {
   return (
@@ -94,6 +96,8 @@ const Register = () => {
           Email: Yup.string().required("Este campo es obligatorio"),
         })}
         onSubmit={(values, resetForm) => {
+            <NavLink to="/Test"></NavLink>
+        
             console.log(values);
             // await requestAuth('post', '/rol', {
             //   ...values,
@@ -111,7 +115,6 @@ const Register = () => {
             //   .catch((response) => {
             //     toast.error(response.response.data)
             //   })
-            <></>
           }}
           btnName="Registrar"
       />

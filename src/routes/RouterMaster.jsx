@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import { useContext, useEffect, useState } from "react";
 import Register from "../pages/Register";
+import Test from "../pages/Test";
 const RouterMaster = () => {
   const createRouter = [
     {
@@ -11,6 +12,10 @@ const RouterMaster = () => {
     {
       path: "Register",
       index: <Register />,
+    },
+    {
+      path: "Test",
+      index: <Test />,
     },
   ];
 

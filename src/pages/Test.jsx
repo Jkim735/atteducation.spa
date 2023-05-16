@@ -1,36 +1,10 @@
+import * as Yup from 'yup'
+import FormDefault from '../components/FormDefault';
 const Test = () => {
   return (
     <>
-    {/* ¿Cuál es tu materia favorita?
-a) Matemáticas
-b) Ciencias (Biología, Química, Física, etc.)
-c) Lenguaje (Literatura, Gramática, Redacción, etc.)
-d) Historia
-
-¿Qué tipo de actividad educativa prefieres?
-a) Experimentos científicos
-b) Resolución de problemas matemáticos
-c) Lectura y análisis de textos
-d) Investigación y aprendizaje sobre eventos históricos
-
-¿Cuál es tu forma preferida de estudiar?
-a) Realizar ejercicios prácticos y aplicar conceptos
-b) Visualizar gráficos, diagramas y representaciones visuales
-c) Leer libros y realizar análisis de textos
-d) Investigar y leer sobre eventos pasados
-
-¿Qué tipo de proyecto educativo te resulta más interesante?
-a) Construir un modelo o prototipo funcional
-b) Realizar experimentos científicos
-c) Escribir un ensayo o crear una historia
-d) Investigar y presentar sobre eventos históricos
-
-¿Cuál es tu enfoque educativo favorito?
-a) Enseñanza basada en problemas y desafíos
-b) Aprendizaje experimental y práctiEnfoque basado en la lectura y el análisis de textos
-d) Enfoque basado en la investigación histórica */}
       <FormDefault
-        title="REGISTRO"
+        title="TEST"
         fields={[
           {
             label: '¿Qué materia te gusta?',
