@@ -4,6 +4,7 @@ import tres from "../assets/tres.jpg";
 import cuatro from "../assets/cuatro.jpg";
 import NavBar from "./NavBar";
 import Body from "./Body";
+import Separador from "../Components/Separador";
 const Home = () => {
   return (
     <>
@@ -41,9 +42,9 @@ const Home = () => {
             aria-label="Slide 4"
           ></button>
         </div>
-        <div className="carousel-inner"style={{ height: '800px' }}>
-          <div className="carousel-item active" data-bs-interval="1000">
-            <img src={uno} className="d-block w-100" alt="..." />
+        <div className="carousel-inner" style={{ height: '90%' }}>
+          <div className="carousel-item active" data-bs-interval="1000"style={{ height: '800px' }}>
+            <img src={uno} className="d-block w-100" alt="..." style={{ height: '800px' }}/>
             <div className="carousel-caption d-none d-md-block">
               <h5>Etiqueta de la primera diapositiva</h5>
               <p>
@@ -52,8 +53,8 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="carousel-item" data-bs-interval="2000" style={{ maxHeight: '100%', objectFit: 'cover' }}>
-            <img src={dos} className="d-block w-100" alt="..." />
+          <div className="carousel-item" data-bs-interval="2000" style={{ height: '800px' }}>
+            <img src={dos} className="d-block w-100" alt="..." style={{ height: '800px' }}/>
             <div className="carousel-caption d-none d-md-block">
               <h5>Etiqueta de la segunda diapositiva</h5>
               <p>
@@ -62,8 +63,8 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="carousel-item" data-bs-interval="2000">
-            <img src={tres} className="d-block w-100" alt="..." />
+          <div className="carousel-item" data-bs-interval="2000"style={{ height: '800px' }}>
+            <img src={tres} className="d-block w-100" alt="..." style={{ height: '800px' }}/>
             <div className="carousel-caption d-none d-md-block">
               <h5>Etiqueta de la tercera diapositiva</h5>
               <p>
@@ -72,8 +73,8 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="carousel-item" data-bs-interval="2000">
-            <img src={cuatro} className="d-block w-100" alt="..." />
+          <div className="carousel-item" data-bs-interval="2000"style={{ height: '800px' }}>
+            <img src={cuatro} className="d-block w-100" alt="..." style={{ height: '800px' }}/>
             <div className="carousel-caption d-none d-md-block">
               <h5>Etiqueta de la segunda diapositiva</h5>
               <p>
@@ -108,6 +109,7 @@ const Home = () => {
           <span className="visually-hidden">Siguiente</span>
         </button>
       </div>
+      <Separador/>
       <Body />
     </>
   );

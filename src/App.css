@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+.custom-separator {
+  height: 20px;
+  /* Agrega otros estilos personalizados si lo deseas */
+}
+.custom-img {
+  width: 260px;
+  height: 100px;
+}
