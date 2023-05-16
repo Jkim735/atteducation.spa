@@ -13,7 +13,7 @@ const Home = () => {
         className="carousel carousel-dark slide"
         data-bs-ride="carousel"
       >
-        <div className="carousel-indicators">
+        <div className="carousel-indicators" >
           <button
             type="button"
             data-bs-target="#carouselExampleDark"
@@ -41,7 +41,7 @@ const Home = () => {
             aria-label="Slide 4"
           ></button>
         </div>
-        <div className="carousel-inner">
+        <div className="carousel-inner"style={{ height: '800px' }}>
           <div className="carousel-item active" data-bs-interval="1000">
             <img src={uno} className="d-block w-100" alt="..." />
             <div className="carousel-caption d-none d-md-block">
@@ -52,7 +52,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="carousel-item" data-bs-interval="2000">
+          <div className="carousel-item" data-bs-interval="2000" style={{ maxHeight: '100%', objectFit: 'cover' }}>
             <img src={dos} className="d-block w-100" alt="..." />
             <div className="carousel-caption d-none d-md-block">
               <h5>Etiqueta de la segunda diapositiva</h5>
