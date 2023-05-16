@@ -4,6 +4,7 @@ import tres from "../assets/tres.jpg";
 import cuatro from "../assets/cuatro.jpg";
 import NavBar from "./NavBar";
 import Body from "./Body";
+import Footer from "../components/Footer/Footer";
 const Home = () => {
   return (
     <>
@@ -41,9 +42,9 @@ const Home = () => {
             aria-label="Slide 4"
           ></button>
         </div>
-        <div className="carousel-inner">
+        <div className="carousel-inner " style={{height:'50em'}}>
           <div className="carousel-item active" data-bs-interval="1000">
-            <img src={uno} className="d-block w-100" alt="..." />
+            <img src={uno} className="d-block w-100 h-70" alt="..." />
             <div className="carousel-caption d-none d-md-block">
               <h5>Etiqueta de la primera diapositiva</h5>
               <p>
@@ -53,7 +54,7 @@ const Home = () => {
             </div>
           </div>
           <div className="carousel-item" data-bs-interval="2000">
-            <img src={dos} className="d-block w-100" alt="..." />
+            <img src={dos} className="d-block w-100 "  alt="..." />
             <div className="carousel-caption d-none d-md-block">
               <h5>Etiqueta de la segunda diapositiva</h5>
               <p>
@@ -63,7 +64,7 @@ const Home = () => {
             </div>
           </div>
           <div className="carousel-item" data-bs-interval="2000">
-            <img src={tres} className="d-block w-100" alt="..." />
+            <img src={tres} className="d-block w-100 h-70" alt="..." />
             <div className="carousel-caption d-none d-md-block">
               <h5>Etiqueta de la tercera diapositiva</h5>
               <p>
@@ -109,6 +110,7 @@ const Home = () => {
         </button>
       </div>
       <Body />
+      <Footer/>
     </>
   );
 };
